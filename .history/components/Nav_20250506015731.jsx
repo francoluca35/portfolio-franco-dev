@@ -3,15 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import AnimatedLogo from "./AnimatedLogo";
-
-const menuItems = [
-  { href: "#inicio", label: "INICIO" },
-  { href: "#experiencia", label: "EXPERIENCIA" },
-  { href: "#proyectos", label: "PROYECTOS" },
-  { href: "#contacto", label: "CONTACTO" },
-];
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,10 +21,10 @@ export default function Nav() {
     <>
       <nav
         className={`fixed w-full px-6 py-4 flex justify-between items-center z-50 transition-colors duration-300 ${
-          scrolled ? "bg-[#2b06364b] shadow-lg" : "bg-transparent"
+          scrolled ? "bg-[#570c6c4b] shadow-lg" : "bg-transparent"
         }`}
       >
-        <AnimatedLogo />
+        <h1 className="text-2xl font-bold text-[#0fc555]">FranComputer</h1>
 
         <button onClick={() => setIsOpen(true)} className="space-y-2">
           <span className="block w-6 h-0.5 bg-[#0fc555]"></span>
@@ -50,7 +42,7 @@ export default function Nav() {
               type: "spring",
               stiffness: 100,
               damping: 15,
-              bounce: 0.25,
+              bounce: 0.55,
               duration: 0.8,
             }}
             className="fixed inset-0 bg-[#2c1167] text-white flex flex-col items-center justify-center text-5xl font-extrabold z-50"
@@ -62,20 +54,27 @@ export default function Nav() {
               close
             </button>
 
-            <ul className="space-y-8 text-center">
-              {menuItems.map((item, index) => (
-                <motion.li
-                  key={item.href}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 + index * 0.15 }}
-                  className="hover:text-black hover:text-6xl transition-all duration-300"
-                >
-                  <Link href={item.href} onClick={() => setIsOpen(false)}>
-                    {item.label}
-                  </Link>
-                </motion.li>
-              ))}
+            <ul className="space-y-8 text-center ">
+              <li className="hover:text-black hover:text-6xl">
+                <Link href="#inicio" onClick={() => setIsOpen(false)}>
+                  INICIO
+                </Link>
+              </li>
+              <li className="hover:text-black  hover:text-6xl">
+                <Link href="#experiencia" onClick={() => setIsOpen(false)}>
+                  EXPERIENCIA
+                </Link>
+              </li>
+              <li className="hover:text-black hover:text-6xl">
+                <Link href="#proyectos" onClick={() => setIsOpen(false)}>
+                  PROYECTOS
+                </Link>
+              </li>
+              <li className="hover:text-black hover:text-6xl">
+                <Link href="#contacto" onClick={() => setIsOpen(false)}>
+                  CONTACTO
+                </Link>
+              </li>
             </ul>
 
             <div className="text-2xl mt-16 flex gap-8">

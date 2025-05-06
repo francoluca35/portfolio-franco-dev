@@ -29,7 +29,7 @@ export default function Nav() {
     <>
       <nav
         className={`fixed w-full px-6 py-4 flex justify-between items-center z-50 transition-colors duration-300 ${
-          scrolled ? "bg-[#2b06364b] shadow-lg" : "bg-transparent"
+          scrolled ? "bg-[#570c6c4b] shadow-lg" : "bg-transparent"
         }`}
       >
         <AnimatedLogo />

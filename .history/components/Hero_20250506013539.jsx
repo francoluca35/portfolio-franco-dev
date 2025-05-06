@@ -5,14 +5,10 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="-mt-20 relative w-full min-h-screen text-white flex items-center justify-center sm:px-12 py-20 bg-gradient-to-br from-[#1f0d3a] via-[#36147f] to-[#6C3FCF]">
-      {/* Fondo negro a la derecha */}
       <div className="hidden md:block absolute top-0 right-0 w-1/3 h-full bg-[#181818] z-0" />
 
-      {/* Difuminado entre violeta y negro */}
-      <div className="hidden md:block absolute top-0 right-[33%] w-24 h-full bg-gradient-to-r from-transparent to-[#181818] z-10" />
-
       {/* Contenido */}
-      <div className="relative z-20 max-w-6xl w-full flex flex-col items-center md:flex-row md:items-center md:justify-between gap-10 md:gap-0">
+      <div className="relative z-10 max-w-6xl w-full flex flex-col items-center md:flex-row md:items-center md:justify-between gap-10 md:gap-0">
         {/* Imagen arriba en mobile, a la derecha en desktop */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
@@ -41,7 +37,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl sm:text-5xl font-extrabold text-[#0fc573]"
+            className="text-4xl sm:text-5xl font-extrabold text-[#D3F56A]"
           >
             Fullstack Developer.
           </motion.h1>
@@ -55,19 +51,13 @@ export default function Hero() {
             Me especializo en crear productos digitales modernos, escalables y
             con gran experiencia de usuario.
           </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-base sm:text-lg text-white max-w-xl mx-auto md:mx-0"
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-white/90 max-w-lg mx-auto md:mx-0 pt-4">
-              <p>• Diseño UI/UX, APIs y bases de datos</p>
-              <p>• Web apps responsivas y animadas</p>
-              <p>• Código limpio, moderno y reutilizable</p>
-              <p>• Experiencia en proyectos internacionales</p>
-            </div>
-          </motion.p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-white/90 max-w-lg mx-auto md:mx-0 pt-4">
+            <p>• Diseño UI/UX, APIs y bases de datos</p>
+            <p>• Web apps responsivas y animadas</p>
+            <p>• Código limpio, moderno y reutilizable</p>
+            <p>• Experiencia en proyectos internacionales</p>
+          </div>
         </div>
       </div>
     </section>

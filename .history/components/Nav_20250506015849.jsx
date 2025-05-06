@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import AnimatedLogo from "./AnimatedLogo";
 
 const menuItems = [
   { href: "#inicio", label: "INICIO" },
@@ -29,10 +28,10 @@ export default function Nav() {
     <>
       <nav
         className={`fixed w-full px-6 py-4 flex justify-between items-center z-50 transition-colors duration-300 ${
-          scrolled ? "bg-[#2b06364b] shadow-lg" : "bg-transparent"
+          scrolled ? "bg-[#570c6c4b] shadow-lg" : "bg-transparent"
         }`}
       >
-        <AnimatedLogo />
+        <h1 className="text-2xl font-bold text-[#0fc555]">FranComputer</h1>
 
         <button onClick={() => setIsOpen(true)} className="space-y-2">
           <span className="block w-6 h-0.5 bg-[#0fc555]"></span>
