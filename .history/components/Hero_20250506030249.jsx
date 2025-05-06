@@ -38,6 +38,7 @@ export default function Hero() {
           </div>
         </motion.div>
 
+        {/* Texto */}
         <div className="backdrop-blur-md bg-[#1f0d3a]/30 rounded-xl p-6 md:p-10 shadow-lg border border-white/10 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
