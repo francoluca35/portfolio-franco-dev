@@ -8,8 +8,8 @@ import AnimatedLogo from "../utils/AnimatedLogo";
 
 const menuItems = [
   { href: "#inicio", label: "INICIO" },
-  { href: "#about", label: "SOBRE MI" },
-  { href: "#skills", label: "HABILIDADES" },
+  { href: "#about", label: "ABOUT" },
+  { href: "#skills", label: "EXPERIENCIA" },
   { href: "#proyectos", label: "PROYECTOS" },
   { href: "#contacto", label: "CONTACTO" },
 ];
