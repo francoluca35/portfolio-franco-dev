@@ -21,73 +21,73 @@ export default function SkillsSection() {
   const skills = [
     {
       icon: (
-        <FaHtml5 className="text-4xl md:text-6xl transition-all duration-300 text-[#0fc573] group-hover:text-[#e34f26]" />
+        <FaHtml5 className="text-4xl md:text-6xl transition-all duration-300 group-hover:text-[#e34f26]" />
       ),
       name: "HTML5",
     },
     {
       icon: (
-        <FaCss3Alt className="text-4xl md:text-6xl transition-all duration-300 text-[#0fc573] group-hover:text-[#264de4]" />
+        <FaCss3Alt className="text-4xl md:text-6xl transition-all duration-300 group-hover:text-[#264de4]" />
       ),
       name: "CSS3",
     },
     {
       icon: (
-        <FaJs className="text-4xl md:text-6xl transition-all duration-300 text-[#0fc573] group-hover:text-[#f0db4f]" />
+        <FaJs className="text-4xl md:text-6xl transition-all duration-300 group-hover:text-[#f0db4f]" />
       ),
       name: "JavaScript",
     },
     {
       icon: (
-        <SiTailwindcss className="text-4xl md:text-6xl transition-all duration-300 text-[#0fc573] group-hover:text-[#38bdf8]" />
+        <SiTailwindcss className="text-4xl md:text-6xl transition-all duration-300 group-hover:text-[#38bdf8]" />
       ),
       name: "Tailwind CSS",
     },
     {
       icon: (
-        <SiNextdotjs className="text-4xl md:text-6xl transition-all duration-300 text-[#0fc573] group-hover:text-white" />
+        <SiNextdotjs className="text-4xl md:text-6xl transition-all duration-300 group-hover:text-white" />
       ),
       name: "Next",
     },
     {
       icon: (
-        <FaReact className="text-4xl md:text-6xl transition-all duration-300 text-[#0fc573] group-hover:text-[#61dafb]" />
+        <FaReact className="text-4xl md:text-6xl transition-all duration-300 group-hover:text-[#61dafb]" />
       ),
       name: "React",
     },
     {
       icon: (
-        <SiRemix className="text-4xl md:text-6xl transition-all duration-300 text-[#0fc573] group-hover:text-[#000000]" />
+        <SiRemix className="text-4xl md:text-6xl transition-all duration-300 group-hover:text-[#000000]" />
       ),
       name: "Remix",
     },
     {
       icon: (
-        <FaGitAlt className="text-4xl md:text-6xl transition-all duration-300 text-[#0fc573] group-hover:text-[#f05032]" />
+        <FaGitAlt className="text-4xl md:text-6xl transition-all duration-300 group-hover:text-[#f05032]" />
       ),
       name: "Git",
     },
     {
       icon: (
-        <FaGithub className="text-4xl md:text-6xl transition-all duration-300 text-[#0fc573] group-hover:text-[#ffffff]" />
+        <FaGithub className="text-4xl md:text-6xl transition-all duration-300 group-hover:text-[#ffffff]" />
       ),
       name: "GitHub",
     },
     {
       icon: (
-        <BiCodeAlt className="text-4xl md:text-6xl transition-all duration-300 text-[#0fc573] group-hover:text-[#c5bc0f]" />
+        <BiCodeAlt className="text-4xl md:text-6xl transition-all duration-300 group-hover:text-[#0fc573]" />
       ),
       name: "RESTful APIs",
     },
     {
       icon: (
-        <SiFirebase className="text-4xl md:text-6xl transition-all duration-300 text-[#0fc573] group-hover:text-[#ffca28]" />
+        <SiFirebase className="text-4xl md:text-6xl transition-all duration-300 group-hover:text-[#ffca28]" />
       ),
       name: "Firebase",
     },
     {
       icon: (
-        <SiMongodb className="text-4xl md:text-6xl transition-all duration-300 text-[#0fc573] group-hover:text-[#47A248]" />
+        <SiMongodb className="text-4xl md:text-6xl transition-all duration-300 group-hover:text-[#47A248]" />
       ),
       name: "MongoDB",
     },

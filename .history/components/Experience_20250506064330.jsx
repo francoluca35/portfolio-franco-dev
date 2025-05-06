@@ -75,7 +75,7 @@ export default function SkillsSection() {
     },
     {
       icon: (
-        <BiCodeAlt className="text-4xl md:text-6xl transition-all duration-300 text-[#0fc573] group-hover:text-[#c5bc0f]" />
+        <BiCodeAlt className="text-4xl md:text-6xl transition-all duration-300 text-[#0fc573] group-hover:text-[#0fc573]" />
       ),
       name: "RESTful APIs",
     },

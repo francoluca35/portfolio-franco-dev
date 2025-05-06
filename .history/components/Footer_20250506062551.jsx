@@ -1,14 +1,8 @@
-import {
-  FaTwitter,
-  FaLinkedin,
-  FaGithub,
-  FaInstagram,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import AnimatedLogo from "../utils/AnimatedLogo";
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-[#0c0713] via-[#3e066f] to-[#000000] text-white py-10 px-6">
+    <footer className="bg-gradient-to-br from-[#000000] via-[#5e0ea3] to-[#000000] text-white py-10 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Branding o texto */}
         <div className="text-center md:text-left">
@@ -23,34 +17,34 @@ export default function Footer() {
         {/* Enlaces sociales */}
         <div className="flex gap-5 text-2xl">
           <a
-            href="/"
+            href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#c50f0f] transition"
+            className="hover:text-[#0fc573] transition"
           >
-            <FaYoutube />
+            <FaTwitter />
           </a>
           <a
-            href="https://www.linkedin.com/in/franco-parera/"
+            href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#0f0fc5] transition"
+            className="hover:text-[#0fc573] transition"
           >
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com/francoluca35"
+            href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#313231] transition"
+            className="hover:text-[#0fc573] transition"
           >
             <FaGithub />
           </a>
           <a
-            href="https://www.instagram.com/franco.dev24/"
+            href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#ff50cd] transition"
+            className="hover:text-[#0fc573] transition"
           >
             <FaInstagram />
           </a>

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiDownload } from "react-icons/fi";
-import "./rotating-border.css"; // Asegurate de que este archivo exista
+import "@/styles/rotating-border.css"; // Asegurate de que este archivo exista
 
 export default function About() {
   return (

@@ -50,7 +50,7 @@ export default function Footer() {
             href="https://www.instagram.com/franco.dev24/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#ff50cd] transition"
+            className="hover:text-[#d5d5d5] transition"
           >
             <FaInstagram />
           </a>

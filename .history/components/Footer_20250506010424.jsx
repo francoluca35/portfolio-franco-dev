@@ -1,0 +1,1 @@
+export default function Footer() { return <footer className="mt-20 text-center text-sm text-gray-500">© 2025 Franco Parera</footer>; }

@@ -11,7 +11,7 @@ export default function Contact() {
   )}`;
   return (
     <section className="bg-[#272626] text-white py-20 px-6 flex justify-center">
-      <div className=" bg-gradient-to-br  from-[#0c0713] via-[#1b7c3f] to-[#131212] rounded-xl p-8 md:p-14 w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-10">
+      <div className=" bg-gradient-to-br  from-[#0c0713] via-[#3e066f] to-[#000000] rounded-xl p-8 md:p-14 w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Texto y enlaces */}
         <div className="text-left md:w-1/2">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">
@@ -20,7 +20,7 @@ export default function Contact() {
           <p className="text-lg mb-2">
             <a
               href="mailto:francolucap1@gmail.com"
-              className="underline font-bold hover:text-[#151515] transition"
+              className="underline font-bold hover:text-[#0fc573] transition"
             >
               Hazme un correo electrónico
             </a>{" "}

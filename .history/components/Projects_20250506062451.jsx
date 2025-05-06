@@ -73,11 +73,11 @@ export default function Projects() {
       : projectsData.filter((p) => p.category === active);
 
   return (
-    <section className=" bg-gradient-to-br  from-[#0c0713] via-[#711eba] to-[#000000] py-12 px-6">
-      <h2 className="text-center text-4xl  md:text-6xl  font-extrabold text-white mb-6">
+    <section className=" bg-gradient-to-br  from-[#0c0713] via-[#3e066f] to-[#000000] py-12 px-6">
+      <h2 className="text-center text-4xl  md:text-6xl  font-extrabold text-black mb-6">
         Proyectos
       </h2>
-      <h5 className="text-center mb-6 -mt-2 text-white">
+      <h5 className="text-center mb-6 -mt-2 text-black">
         Cada proyecto, una solución a medida. Mirá lo que puedo hacer por vos.
       </h5>
 
