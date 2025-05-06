@@ -33,9 +33,8 @@ export default function About() {
         src="/assets/fondos/fondo-projectos.avif"
         alt="Fondo"
         fill
-        priority
-        sizes="100vw"
         className="object-cover z-0"
+        priority
       />
 
       <div className="absolute inset-0 bg-black/70 z-10 backdrop-blur-sm" />
