@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="antialiased scroll-smooth outfit.className">
+      <body className="antialiased scroll-smooth">
         <Nav />
         <div className="pt-20">{children}</div>{" "}
       </body>

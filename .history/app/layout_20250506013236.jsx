@@ -1,6 +1,5 @@
 import Nav from "../components/Nav";
 import "../styles/globals.css";
-import { Outfit } from "next/font/google";
 
 export const metadata = {
   title: "Franco Parera | Desarrollador Web Fullstack",
@@ -35,10 +34,6 @@ export const metadata = {
     images: ["https://tusitio.com/og-image.jpg"],
   },
 };
-const outfit = Outfit({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"], // Podés ajustar los pesos
-});
 
 export default function RootLayout({ children }) {
   return (
@@ -47,7 +42,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="antialiased scroll-smooth outfit.className">
+      <body className="antialiased scroll-smooth">
         <Nav />
         <div className="pt-20">{children}</div>{" "}
       </body>

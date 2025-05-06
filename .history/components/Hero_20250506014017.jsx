@@ -55,19 +55,13 @@ export default function Hero() {
             Me especializo en crear productos digitales modernos, escalables y
             con gran experiencia de usuario.
           </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-base sm:text-lg text-white max-w-xl mx-auto md:mx-0"
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-white/90 max-w-lg mx-auto md:mx-0 pt-4">
-              <p>• Diseño UI/UX, APIs y bases de datos</p>
-              <p>• Web apps responsivas y animadas</p>
-              <p>• Código limpio, moderno y reutilizable</p>
-              <p>• Experiencia en proyectos internacionales</p>
-            </div>
-          </motion.p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-white/90 max-w-lg mx-auto md:mx-0 pt-4">
+            <p>• Diseño UI/UX, APIs y bases de datos</p>
+            <p>• Web apps responsivas y animadas</p>
+            <p>• Código limpio, moderno y reutilizable</p>
+            <p>• Experiencia en proyectos internacionales</p>
+          </div>
         </div>
       </div>
     </section>
