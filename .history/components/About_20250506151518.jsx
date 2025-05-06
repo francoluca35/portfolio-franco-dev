@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiDownload } from "react-icons/fi";
-import "../styles/globals.css";
+import "/globals.css";
 export default function About() {
   const [descargando, setDescargando] = useState(false);
   const [descargado, setDescargado] = useState(false);
