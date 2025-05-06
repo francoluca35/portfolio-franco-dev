@@ -26,11 +26,6 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const phone = "+541131199882";
-  const message = "Hola!, me gustaria hablar con franco.";
-  const whatsappLink = `https://wa.me/${phone}?text=${encodeURIComponent(
-    message
-  )}`;
   return (
     <>
       <nav
@@ -110,7 +105,7 @@ export default function Nav() {
                 <FaInstagram />
               </a>
               <a
-                href={whatsappLink}
+                href="https://www.instagram.com/franco.dev24/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#34b851] transition-colors duration-300"

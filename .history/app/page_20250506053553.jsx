@@ -23,7 +23,7 @@ export default function HomePage() {
         <Projects />
       </section>
 
-      <section id="contacto" className="">
+      <section id="contacto" className="bg-[#6C3FCF] text-white py-20 px-6">
         <Contact />
       </section>
       <section id="footer" className="bg-[#6C3FCF] text-white py-20 px-6">
