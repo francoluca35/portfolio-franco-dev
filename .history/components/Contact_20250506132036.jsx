@@ -67,18 +67,15 @@ export default function Contact() {
             alt="Nube decorativa"
             fill
             className="object-contain opacity-80"
-            priority={false}
-            loading="lazy"
           />
 
           <div className="absolute w-48 h-48 md:w-64 md:h-64">
             <Image
-              src="/assets/contact.webp"
+              src="/assets/contact.png"
               alt="Cartoon Franco Parera"
               fill
               className="object-contain"
-              priority={false}
-              loading="lazy"
+              priority
             />
           </div>
         </div>

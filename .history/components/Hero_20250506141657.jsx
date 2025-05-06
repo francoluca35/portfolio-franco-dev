@@ -41,9 +41,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl md:text-4xl font-extrabold text-[#0fc573] flex justify-center items-center gap-3 flex-wrap"
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0fc573] flex justify-center items-center gap-3 flex-wrap"
           >
-            Franco Parera – Fullstack Developer
+            Franco Parera – Desarrollador Web Fullstack
             <FaJs className="text-yellow-400 text-3xl md:text-4xl" />
           </motion.h1>
 
@@ -53,8 +53,8 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="text-base sm:text-lg text-white max-w-xl mx-auto mt-4"
           >
-            Desarrollo soluciones digitales escalables y diseño web moderno,
-            transformando ideas en experiencias web robustas y efectivas.
+            Transformo ideas en experiencias digitales robustas, combinando
+            arquitectura escalable con diseño funcional.
           </motion.p>
 
           <motion.div

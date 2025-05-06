@@ -1,7 +1,6 @@
 import Nav from "../components/Nav";
 import "../styles/globals.css";
 import { Outfit } from "next/font/google";
-import ScrollTopButton from "../utils/ScrollTopButton";
 
 export const metadata = {
   title: "Franco Parera | Desarrollador Web Fullstack",
@@ -50,10 +49,9 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon.ico" />
       </head>
-      <body className={`antialiased scroll-smooth ${outfit.className}`}>
+      <body className="antialiased scroll-smooth outfit.className">
         <Nav />
-        <div className="pt-20">{children}</div>
-        <ScrollTopButton />
+        <div className="pt-20">{children}</div>{" "}
       </body>
     </html>
   );

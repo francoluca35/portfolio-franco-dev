@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Branding o texto */}
         <div className="text-center md:text-left">
-          <AnimatedLogo />
+          <AnimatedLogo className="text-2xl font-bold tracking-wide" />
 
           <p className="text-sm mt-1 text-gray-300">
             © {new Date().getFullYear()} Todos los derechos reservados.

@@ -25,8 +25,8 @@ const projectsData = [
     category: "web",
     title: "Web de Viajes",
     description: "Sitio web Transportes Maurello S.A",
-    image: "/assets/proyects/maurello-web.avif",
-    link: "https://empresacolectivo.vercel.app",
+    image: "/assets/proyects/maurello-web.png",
+    link: "https://jlatecnicos.com",
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const projectsData = [
     description:
       "App fullstack para la organización de viajes y control de pasajes",
     image: "/assets/proyects/maurello-app.avif",
-    link: "https://appcolectivos.vercel.app",
+    link: "https://jlatecnicos.online",
   },
 
   {
@@ -53,8 +53,8 @@ const projectsData = [
     title: "App de reservas",
     description:
       "App fullstack para gestión de reservas para cancahs de futbol y padel",
-    image: "/assets/proyects/yael-app.avif",
-    link: "https://yael-app.vercel.app",
+    image: "/assets/proyects/yael-app.png",
+    link: "https://jlatecnicos.online",
   },
 ];
 
@@ -74,12 +74,12 @@ export default function Projects() {
 
   return (
     <section className=" bg-gradient-to-br  from-[#0c0713] via-[#711eba] to-[#000000] py-12 px-6">
-      <h2 className="text-center text-4xl  md:text-6xl  font-extrabold text-white mb-6">
+      <h1 className="text-center text-4xl  md:text-6xl  font-extrabold text-white mb-6">
         Proyectos
-      </h2>
-      <h3 className="text-center mb-6 -mt-2 text-white">
+      </h1>
+      <h2 className="text-center mb-6 -mt-2 text-white">
         Cada proyecto, una solución a medida. Mirá lo que puedo hacer por vos.
-      </h3>
+      </h2>
 
       <div className="flex justify-center space-x-4 mb-8">
         {categories.map((cat) => (

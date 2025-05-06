@@ -1,0 +1,1 @@
+¿Querés que te actualice directamente algunos archivos (_document.js, next.config.js, imágenes, etc.) con estas mejoras para que los copies y pegues?

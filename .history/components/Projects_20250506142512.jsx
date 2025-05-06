@@ -77,9 +77,9 @@ export default function Projects() {
       <h2 className="text-center text-4xl  md:text-6xl  font-extrabold text-white mb-6">
         Proyectos
       </h2>
-      <h3 className="text-center mb-6 -mt-2 text-white">
+      <h2 className="text-center mb-6 -mt-2 text-white">
         Cada proyecto, una solución a medida. Mirá lo que puedo hacer por vos.
-      </h3>
+      </h2>
 
       <div className="flex justify-center space-x-4 mb-8">
         {categories.map((cat) => (

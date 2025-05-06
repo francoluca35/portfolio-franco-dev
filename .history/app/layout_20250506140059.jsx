@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon.ico" />
       </head>
-      <body className={`antialiased scroll-smooth ${outfit.className}`}>
+      <body className="antialiased scroll-smooth outfit.className">
         <Nav />
         <div className="pt-20">{children}</div>
         <ScrollTopButton />

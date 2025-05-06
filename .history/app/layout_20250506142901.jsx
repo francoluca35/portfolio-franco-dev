@@ -1,7 +1,7 @@
 import Nav from "../components/Nav";
 import "../styles/globals.css";
 import { Outfit } from "next/font/google";
-import ScrollTopButton from "../utils/ScrollTopButton";
+import ScrollTopButton from "../components/ScrollTopButton";
 
 export const metadata = {
   title: "Franco Parera | Desarrollador Web Fullstack",

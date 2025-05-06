@@ -53,8 +53,8 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="text-base sm:text-lg text-white max-w-xl mx-auto mt-4"
           >
-            Desarrollo soluciones digitales escalables y diseño web moderno,
-            transformando ideas en experiencias web robustas y efectivas.
+            Transformo ideas en experiencias digitales robustas, combinando
+            arquitectura escalable con diseño funcional.
           </motion.p>
 
           <motion.div

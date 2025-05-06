@@ -74,12 +74,12 @@ export default function Projects() {
 
   return (
     <section className=" bg-gradient-to-br  from-[#0c0713] via-[#711eba] to-[#000000] py-12 px-6">
-      <h2 className="text-center text-4xl  md:text-6xl  font-extrabold text-white mb-6">
+      <h1 className="text-center text-4xl  md:text-6xl  font-extrabold text-white mb-6">
         Proyectos
-      </h2>
-      <h3 className="text-center mb-6 -mt-2 text-white">
+      </h1>
+      <h2 className="text-center mb-6 -mt-2 text-white">
         Cada proyecto, una solución a medida. Mirá lo que puedo hacer por vos.
-      </h3>
+      </h2>
 
       <div className="flex justify-center space-x-4 mb-8">
         {categories.map((cat) => (

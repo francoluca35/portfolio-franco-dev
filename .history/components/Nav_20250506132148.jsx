@@ -40,13 +40,7 @@ export default function Nav() {
       >
         <AnimatedLogo />
 
-        <button
-          onClick={() => setIsOpen(true)}
-          className="space-y-2"
-          button
-          aria-label="Abrir menú de navegación"
-          title="Menú"
-        >
+        <button onClick={() => setIsOpen(true)} className="space-y-2">
           <span className="block w-6 h-0.5 bg-[#0fc555]"></span>
           <span className="block w-6 h-0.5 bg-[#0fc555]"></span>
         </button>
