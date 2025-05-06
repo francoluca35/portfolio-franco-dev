@@ -24,13 +24,16 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="relative flex justify-center w-full md:w-auto"
         >
-          {/* Imagen con esquinas redondeadas */}
-          <div className="relative w-[260px] h-[350px] sm:w-[300px] sm:h-[400px] md:w-[320px] md:h-[440px] shadow-2xl z-10 overflow-hidden rounded-2xl border border-white">
+          {/* Recuadro blanco */}
+          <div className="absolute top-3 left-3 w-[260px] h-[350px] sm:w-[300px] sm:h-[400px] md:w-[320px] md:h-[440px] border border-white z-0" />
+
+          {/* Imagen */}
+          <div className="relative w-[260px] h-[350px] sm:w-[300px] sm:h-[400px] md:w-[320px] md:h-[440px] shadow-2xl z-10">
             <Image
               src="/assets/yo-hero.png"
               alt="Franco Parera - desarrollador fullstack"
               fill
-              className="object-cover" // <- sin rounded aquí
+              className="object-contain rounded-xl"
               priority
             />
           </div>

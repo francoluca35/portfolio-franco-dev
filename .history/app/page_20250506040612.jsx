@@ -14,7 +14,7 @@ export default function HomePage() {
       <section id="about" className="bg-[#181818] text-white ">
         <About />
       </section>
-      <section id="skills" className="bg-[#181818] text-white ">
+      <section id="experiencia" className="bg-[#181818] text-white ">
         <Experience />
       </section>
 

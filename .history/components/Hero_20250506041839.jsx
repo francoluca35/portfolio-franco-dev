@@ -12,31 +12,32 @@ export default function Hero() {
       className="relative w-full min-h-screen bg-gradient-to-br from-[#1f0d3a] via-[#36147f] to-[#6C3FCF] text-white px-4 sm:px-12 py-20 -mt-20 flex items-center justify-center"
     >
       <ParticlesBackground />
+
       <div className="hidden md:block absolute top-0 right-0 w-1/3 h-full backdrop-blur-md bg-[#171717]/60 z-10" />
       <MatrixRain />
+
       <div className="hidden md:block absolute top-0 right-[33%] w-24 h-full bg-gradient-to-r from-transparent to-[#171717] z-20" />
 
-      {/* Contenido visible */}
-      <div className="relative z-30 max-w-6xl w-full flex flex-col md:flex-row items-center justify-center md:justify-between gap-10">
+      {/*Contenido visible */}
+      <div className="relative z-30 max-w-6xl w-full flex flex-col md:flex-row items-center md:items-center md:justify-between gap-10">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="relative flex justify-center w-full md:w-auto"
+          className="relative flex justify-center"
         >
-          {/* Imagen con esquinas redondeadas */}
-          <div className="relative w-[260px] h-[350px] sm:w-[300px] sm:h-[400px] md:w-[320px] md:h-[440px] shadow-2xl z-10 overflow-hidden rounded-2xl border border-white">
+          <div className="absolute top-6 left-6 w-60 h-60 sm:w-72 sm:h-72 border border-white z-0" />
+          <div className="relative w-60 h-60 sm:w-72 sm:h-72 shadow-2xl overflow-hidden z-10">
             <Image
-              src="/assets/yo-hero.png"
+              src="/assets/yo-prueba.jpg"
               alt="Franco Parera - desarrollador fullstack"
               fill
-              className="object-cover" // <- sin rounded aquí
+              className="object-cover"
               priority
             />
           </div>
         </motion.div>
 
-        {/* Texto */}
         <div className="backdrop-blur-md bg-[#1f0d3a]/30 rounded-xl p-6 md:p-10 shadow-lg border border-white/10 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}

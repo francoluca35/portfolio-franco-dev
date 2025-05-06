@@ -2,7 +2,6 @@ import Hero from "../components/Hero";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
-import About from "../components/About";
 
 export default function HomePage() {
   return (
@@ -11,10 +10,7 @@ export default function HomePage() {
         <Hero />
       </section>
 
-      <section id="about" className="bg-[#181818] text-white ">
-        <About />
-      </section>
-      <section id="skills" className="bg-[#181818] text-white ">
+      <section id="experiencia" className="bg-[#181818] text-white ">
         <Experience />
       </section>
 

@@ -21,53 +21,51 @@ import { BiCodeAlt } from "react-icons/bi";
 export default function SkillsSection() {
   const skills = [
     {
-      icon: <FaHtml5 className="text-4xl md:hover:text-7xl md:text-6xl" />,
+      icon: <FaHtml5 className="text-4xl hover:text-7xl md:text-6xl" />,
       name: "HTML5",
     },
     {
-      icon: <FaCss3Alt className="text-4xl md:hover:text-7xl md:text-6xl" />,
+      icon: <FaCss3Alt className="text-4xl hover:text-7xl md:text-6xl" />,
       name: "CSS3",
     },
     {
-      icon: <FaJs className="text-4xl md:hover:text-7xl md:text-6xl" />,
+      icon: <FaJs className="text-4xl hover:text-7xl md:text-6xl" />,
       name: "JavaScript",
     },
     {
-      icon: (
-        <SiTailwindcss className="text-4xl md:hover:text-7xl md:text-6xl" />
-      ),
+      icon: <SiTailwindcss className="text-4xl hover:text-7xl md:text-6xl" />,
       name: "Tailwind CSS",
     },
     {
-      icon: <SiNextdotjs className="text-4xl md:hover:text-7xl md:text-6xl" />,
+      icon: <SiNextdotjs className="text-4xl hover:text-7xl md:text-6xl" />,
       name: "Next",
     },
     {
-      icon: <FaReact className="text-4xl md:hover:text-7xl md:text-6xl" />,
+      icon: <FaReact className="text-4xl hover:text-7xl md:text-6xl" />,
       name: "React",
     },
     {
-      icon: <SiRemix className="text-4xl md:hover:text-7xl md:text-6xl" />,
+      icon: <SiRemix className="text-4xl hover:text-7xl md:text-6xl" />,
       name: "Remix",
     },
     {
-      icon: <FaGitAlt className="text-4xl md:hover:text-7xl md:text-6xl" />,
+      icon: <FaGitAlt className="text-4xl hover:text-7xl md:text-6xl" />,
       name: "Git",
     },
     {
-      icon: <FaGithub className="text-4xl md:hover:text-7xl md:text-6xl" />,
+      icon: <FaGithub className="text-4xl hover:text-7xl md:text-6xl" />,
       name: "GitHub",
     },
     {
-      icon: <BiCodeAlt className="text-4xl md:hover:text-7xl md:text-6xl" />,
+      icon: <BiCodeAlt className="text-4xl hover:text-7xl md:text-6xl" />,
       name: "RESTful APIs",
     },
     {
-      icon: <SiFirebase className="text-4xl md:hover:text-7xl md:text-6xl" />,
+      icon: <SiFirebase className="text-4xl hover:text-7xl md:text-6xl" />,
       name: "Firebase",
     },
     {
-      icon: <SiMongodb className="text-4xl md:hover:text-7xl md:text-6xl" />,
+      icon: <SiMongodb className="text-4xl hover:text-7xl md:text-6xl" />,
       name: "MongoDB",
     },
   ];
@@ -75,10 +73,10 @@ export default function SkillsSection() {
   return (
     <section className="w-full min-h-screen flex items-center bg-[#191919] text-white px-4 sm:px-10">
       <div className="max-w-6xl mx-auto text-center">
-        <p className="uppercase tracking-wider text-md text-[#0fc573] font-semibold">
+        <p className="uppercase tracking-wider text-sm text-[#0fc573] font-semibold">
           Skills & Tools
         </p>
-        <h2 className="text-4xl  md:text-6xl  font-extrabold mb-4">
+        <h2 className="text-4xl hover:text-7xl md:text-6xl sm:text-5xl font-extrabold mb-4">
           Tecnologías que domino
         </h2>
         <p className="text-white/80 mb-10">

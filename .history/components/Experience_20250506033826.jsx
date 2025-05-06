@@ -75,10 +75,10 @@ export default function SkillsSection() {
   return (
     <section className="w-full min-h-screen flex items-center bg-[#191919] text-white px-4 sm:px-10">
       <div className="max-w-6xl mx-auto text-center">
-        <p className="uppercase tracking-wider text-md text-[#0fc573] font-semibold">
+        <p className="uppercase tracking-wider text-sm text-[#0fc573] font-semibold">
           Skills & Tools
         </p>
-        <h2 className="text-4xl  md:text-6xl  font-extrabold mb-4">
+        <h2 className="text-4xl md:hover:text-7xl md:text-6xl sm:text-5xl font-extrabold mb-4">
           Tecnologías que domino
         </h2>
         <p className="text-white/80 mb-10">
