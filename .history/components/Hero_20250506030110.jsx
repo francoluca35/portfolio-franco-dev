@@ -13,13 +13,16 @@ export default function Hero() {
     >
       <ParticlesBackground />
 
+      {/* Fondo negro difuminado con matrix */}
       <div className="hidden md:block absolute top-0 right-0 w-1/3 h-full backdrop-blur-md bg-[#171717]/60 z-10" />
       <MatrixRain />
 
+      {/* Difuminado entre violeta y negro */}
       <div className="hidden md:block absolute top-0 right-[33%] w-24 h-full bg-gradient-to-r from-transparent to-[#171717] z-20" />
 
-      {/*Contenido visible */}
+      {/* Contenido */}
       <div className="relative z-30 max-w-6xl w-full flex flex-col md:flex-row items-center md:items-center md:justify-between gap-10">
+        {/* Imagen */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -38,6 +41,7 @@ export default function Hero() {
           </div>
         </motion.div>
 
+        {/* Texto */}
         <div className="backdrop-blur-md bg-[#1f0d3a]/30 rounded-xl p-6 md:p-10 shadow-lg border border-white/10 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
