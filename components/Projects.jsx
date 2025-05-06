@@ -1,0 +1,1 @@
+export default function Projects() { return <section className="my-16">Proyectos (próximamente)</section>; }

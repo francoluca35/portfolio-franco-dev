@@ -1,0 +1,66 @@
+"use client";
+import { motion } from "framer-motion";
+import Image from "next/image";
+
+export default function Hero() {
+  return (
+    <section className="relative w-full min-h-screen bg-[#6C3FCF] text-white flex items-center justify-center px-6 sm:px-12 py-20">
+      {/* Fondo negro a la derecha solo en desktop */}
+      <div className="hidden md:block absolute top-0 right-0 w-1/3 h-full bg-[#181818] z-0" />
+
+      {/* Contenido */}
+      <div className="relative z-10 max-w-6xl w-full flex flex-col items-center md:flex-row md:items-center md:justify-between gap-10 md:gap-0">
+        {/* Imagen arriba en mobile, a la derecha en desktop */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="relative flex justify-center"
+        >
+          {/* Cuadro blanco detrás */}
+          <div className="absolute top-6 left-6 w-60 h-60 md:w-80 md:h-80 border border-white z-0" />
+
+          {/* Imagen principal */}
+          <div className="relative w-60 h-60 md:w-80 md:h-80 shadow-2xl overflow-hidden z-10">
+            <Image
+              src="/assets/yo-franco.png"
+              alt="Foto de Franco"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </motion.div>
+
+        {/* Texto debajo en mobile, izquierda en desktop */}
+        <div className="text-center md:text-left md:w-1/2 space-y-6">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl sm:text-5xl font-extrabold text-[#D3F56A]"
+          >
+            Fullstack Developer.
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="text-base sm:text-lg text-white max-w-xl mx-auto md:mx-0"
+          >
+            Me especializo en crear productos digitales modernos, escalables y
+            con gran experiencia de usuario.
+          </motion.p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-white/90 max-w-lg mx-auto md:mx-0 pt-4">
+            <p>• Diseño UI/UX, APIs y bases de datos</p>
+            <p>• Web apps responsivas y animadas</p>
+            <p>• Código limpio, moderno y reutilizable</p>
+            <p>• Experiencia en proyectos internacionales</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
