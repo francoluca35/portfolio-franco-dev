@@ -1,4 +1,3 @@
-import Nav from "../components/Nav";
 import "../styles/globals.css";
 
 export const metadata = {
@@ -42,11 +41,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="bg-black text-white antialiased">
-        <Nav />
-        <div className="pt-20">{children}</div>{" "}
-        {/* Deja espacio para el nav fijo */}
-      </body>
+      <body className="bg-black text-white antialiased">{children}</body>
     </html>
   );
 }

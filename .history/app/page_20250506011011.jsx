@@ -8,6 +8,8 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
+      <header>{/* Podés agregar navegación aquí si tenés */}</header>
+
       <main>
         <section id="inicio">
           <Hero />
@@ -20,11 +22,11 @@ export default function Home() {
         <section id="proyectos">
           <Projects />
         </section>
-
-        <section id="contacto">
-          <Footer />
-        </section>
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
