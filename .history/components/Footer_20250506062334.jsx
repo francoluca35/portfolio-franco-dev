@@ -1,10 +1,4 @@
-import {
-  FaTwitter,
-  FaLinkedin,
-  FaGithub,
-  FaInstagram,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import AnimatedLogo from "../utils/AnimatedLogo";
 export default function Footer() {
   return (
@@ -23,34 +17,34 @@ export default function Footer() {
         {/* Enlaces sociales */}
         <div className="flex gap-5 text-2xl">
           <a
-            href="/"
+            href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#c50f0f] transition"
+            className="hover:text-[#0fc573] transition"
           >
-            <FaYoutube />
+            <FaTwitter />
           </a>
           <a
-            href="https://www.linkedin.com/in/franco-parera/"
+            href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#0f0fc5] transition"
+            className="hover:text-[#0fc573] transition"
           >
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com/francoluca35"
+            href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#313231] transition"
+            className="hover:text-[#0fc573] transition"
           >
             <FaGithub />
           </a>
           <a
-            href="https://www.instagram.com/franco.dev24/"
+            href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#ff50cd] transition"
+            className="hover:text-[#0fc573] transition"
           >
             <FaInstagram />
           </a>

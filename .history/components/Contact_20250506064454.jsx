@@ -20,7 +20,7 @@ export default function Contact() {
           <p className="text-lg mb-2">
             <a
               href="mailto:francolucap1@gmail.com"
-              className="underline font-bold hover:text-[#151515] transition"
+              className="underline font-bold hover:text-[#4b184e] transition"
             >
               Hazme un correo electrónico
             </a>{" "}

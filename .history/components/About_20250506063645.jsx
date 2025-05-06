@@ -2,12 +2,11 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiDownload } from "react-icons/fi";
-import "./rotating-border.css"; // Asegurate de que este archivo exista
+import "./rotating-border.css"; // Asegurate de tener este archivo CSS
 
 export default function About() {
   return (
     <section className="relative w-full min-h-screen bg-black text-white flex items-center justify-center overflow-hidden">
-      {/* Fondo */}
       <Image
         src="/assets/fondos/fondo-projectos.png"
         alt="Fondo"
@@ -16,10 +15,8 @@ export default function About() {
         priority
       />
 
-      {/* Capa oscura con blur */}
       <div className="absolute inset-0 bg-black/70 z-10 backdrop-blur-sm" />
 
-      {/* Contenido principal */}
       <div className="relative z-20 max-w-6xl px-4 sm:px-8 py-20 flex flex-col md:flex-row items-center gap-10">
         {/* Imagen con borde animado */}
         <div className="relative w-60 h-60 sm:w-72 sm:h-72">
@@ -35,7 +32,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Texto descriptivo */}
+        {/* Texto */}
         <div className="text-center md:text-left space-y-6 max-w-xl">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -60,7 +57,7 @@ export default function About() {
           </motion.p>
 
           <motion.a
-            href="/pdfs/cv-parera-franco-desarrollo.pdf"
+            href="pdfs/cv-parera-franco-desarrollo.pdf"
             download
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

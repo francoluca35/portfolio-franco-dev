@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       aria-label="Presentación de Franco Parera como Fullstack Developer"
-      className="relative w-full min-h-screen bg-gradient-to-br  from-[#0c0713] via-[#3e066f] to-[#000000] text-white px-4 sm:px-12 py-20 -mt-20 flex items-center justify-center"
+      className="relative w-full min-h-screen bg-gradient-to-br from-[#1f0d3a] via-[#36147f] to-[#6C3FCF] text-white px-4 sm:px-12 py-20 -mt-20 flex items-center justify-center"
     >
       <ParticlesBackground />
       <div className="hidden md:block absolute top-0 right-0 w-1/3 h-full backdrop-blur-md bg-[#171717]/60 z-10" />

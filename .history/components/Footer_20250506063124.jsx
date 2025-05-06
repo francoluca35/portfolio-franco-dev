@@ -47,10 +47,10 @@ export default function Footer() {
             <FaGithub />
           </a>
           <a
-            href="https://www.instagram.com/franco.dev24/"
+            href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#ff50cd] transition"
+            className="hover:text-[#0fc573] transition"
           >
             <FaInstagram />
           </a>
