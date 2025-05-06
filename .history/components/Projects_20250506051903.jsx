@@ -26,7 +26,7 @@ const projectsData = [
     title: "Web de Viajes",
     description: "Sitio web Transportes Maurello S.A",
     image: "/assets/proyects/maurello-web.png",
-    link: "https://jlatecnicos.com",
+    link: "https://tusitio.com",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const projectsData = [
     title: "App Control de finanzas",
     description: "App fullstack para gestión de finanzas para JLA Técnico",
     image: "/assets/proyects/app-jla.png",
-    link: "https://jlatecnicos.online",
+    link: "https://tuapp.com",
   },
 
   {
@@ -44,7 +44,7 @@ const projectsData = [
     description:
       "App fullstack para la organización de viajes y control de pasajes",
     image: "/assets/proyects/maurello-app.png",
-    link: "https://jlatecnicos.online",
+    link: "https://tuapp.com",
   },
 
   {
@@ -54,7 +54,7 @@ const projectsData = [
     description:
       "App fullstack para gestión de reservas para cancahs de futbol y padel",
     image: "/assets/proyects/yael-app.png",
-    link: "https://jlatecnicos.online",
+    link: "https://tuapp.com",
   },
 ];
 
@@ -73,14 +73,12 @@ export default function Projects() {
       : projectsData.filter((p) => p.category === active);
 
   return (
-    <section className="bg-[#158f64] py-12 px-6">
+    <section className="bg-[#1e9a6f] py-12 px-6">
       <h2 className="text-center text-4xl  md:text-6xl  font-extrabold text-black mb-6">
         Proyectos
       </h2>
-      <h5 className="text-center mb-6 -mt-2 text-black">
-        Cada proyecto, una solución a medida. Mirá lo que puedo hacer por vos.
-      </h5>
 
+      {/* Botones de filtro */}
       <div className="flex justify-center space-x-4 mb-8">
         {categories.map((cat) => (
           <button
@@ -119,7 +117,7 @@ export default function Projects() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#451780] text-white px-4 py-2 rounded-full font-bold hover:bg-[#6f38b7d3]"
+                className="bg-white text-black px-4 py-2 rounded-full font-bold hover:bg-gray-200"
               >
                 Ver Proyecto
               </a>
