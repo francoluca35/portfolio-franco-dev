@@ -14,6 +14,7 @@ export default function About() {
 
     setDescargando(true);
 
+    // Simula "carga" antes de descargar
     setTimeout(() => {
       const link = document.createElement("a");
       link.href = "/pdfs/cv-parera-franco-desarrollo.pdf";
@@ -24,11 +25,12 @@ export default function About() {
 
       setDescargando(false);
       setDescargado(true);
-    }, 2000);
+    }, 2000); // 2 segundos de "carga"
   };
 
   return (
     <section className="relative w-full min-h-screen bg-black text-white flex items-center justify-center overflow-hidden">
+      {/* Fondo */}
       <Image
         src="/assets/fondos/fondo-projectos.avif"
         alt="Fondo"
@@ -80,26 +82,16 @@ export default function About() {
             cumplimiento de plazos.
           </motion.p>
 
-          <motion.button
-            onClick={handleDescarga}
+          <motion.a
+            href="/pdfs/cv-parera-franco-desarrollo.pdf"
+            download
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className={`inline-flex items-center gap-2 font-mono text-lg px-8 py-3 rounded-full shadow-lg border border-white/10 transition-all
-    ${
-      descargado
-        ? "bg-green-600 text-white"
-        : descargando
-        ? "bg-[#a765f2] text-white"
-        : "bg-[#8e2df5] text-white hover:bg-[#7c23d3]"
-    }`}
+            className="inline-flex items-center gap-2 bg-[#8e2df5] text-white font-mono text-lg px-8 py-3 rounded-full shadow-lg border border-white/10 hover:bg-[#7c23d3] transition-all"
           >
             <FiDownload className="text-xl" />
-            {descargado
-              ? "En Ordenador"
-              : descargando
-              ? "Descargando..."
-              : "Descargar CV"}
-          </motion.button>
+            Descargar CV
+          </motion.a>
         </div>
       </div>
     </section>

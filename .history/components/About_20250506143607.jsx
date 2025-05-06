@@ -14,6 +14,7 @@ export default function About() {
 
     setDescargando(true);
 
+    // Simula "carga" antes de descargar
     setTimeout(() => {
       const link = document.createElement("a");
       link.href = "/pdfs/cv-parera-franco-desarrollo.pdf";
@@ -24,11 +25,12 @@ export default function About() {
 
       setDescargando(false);
       setDescargado(true);
-    }, 2000);
+    }, 2000); // 2 segundos de "carga"
   };
 
   return (
     <section className="relative w-full min-h-screen bg-black text-white flex items-center justify-center overflow-hidden">
+      {/* Fondo */}
       <Image
         src="/assets/fondos/fondo-projectos.avif"
         alt="Fondo"
@@ -95,7 +97,7 @@ export default function About() {
           >
             <FiDownload className="text-xl" />
             {descargado
-              ? "En Ordenador"
+              ? "Descargado"
               : descargando
               ? "Descargando..."
               : "Descargar CV"}
