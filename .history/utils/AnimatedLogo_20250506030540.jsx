@@ -1,8 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Urbanist } from "next/font/google";
-import Link from "next/link";
-
+import { Outfit, Urbanist } from "next/font/google";
 const outfit = Urbanist({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -72,14 +70,12 @@ export default function AnimatedLogo() {
   }, [phase]);
 
   return (
-    <Link href="#inicio" scroll={true}>
-      <h1
-        className={`text-2xl font-bold text-[#0fc555] tracking-wide cursor-pointer ${outfit.className}`}
-      >
-        F<span className="inline-block">{left}</span>C
-        <span className="inline-block">{right}</span>
-        <span className="text-[#0fc555] animate-pulse">.</span>
-      </h1>
-    </Link>
+    <h1
+      className={`text-2xl font-bold text-[#0fc555] tracking-wide ${outfit.className}`}
+    >
+      F<span className="inline-block">{left}</span>C
+      <span className="inline-block">{right}</span>
+      <span className="text-[#0fc555] animate-pulse">.</span>
+    </h1>
   );
 }
