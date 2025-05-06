@@ -7,55 +7,20 @@ const projectsData = [
   {
     id: 1,
     category: "web",
-    title: "Web Emprendimiento",
-    description: "Sitio web DeamonDD Diseño & Desarrollo",
-    image: "/assets/proyects/deamondd.png",
-    link: "https://deamondd.com",
+    title: "Portfolio Personal",
+    description: "Sitio web personal responsive con Next.js",
+    image: "/assets/proyecto1.png",
+    link: "https://tusitio.com",
   },
   {
     id: 2,
-    category: "web",
-    title: "Web Empresa Gastronomica",
-    description: "Sitio web JLA Técnico",
-    image: "/assets/proyects/jla.jpg",
-    link: "https://jlatecnicos.com",
-  },
-  {
-    id: 3,
-    category: "web",
-    title: "Web de Viajes",
-    description: "Sitio web Transportes Maurello S.A",
-    image: "/assets/proyects/maurello-web.png",
-    link: "https://jlatecnicos.com",
-  },
-  {
-    id: 4,
     category: "app",
-    title: "App Control de finanzas",
-    description: "App fullstack para gestión de finanzas para JLA Técnico",
-    image: "/assets/proyects/app-jla.png",
-    link: "https://jlatecnicos.online",
+    title: "App de Tareas",
+    description: "App fullstack para gestión de tareas",
+    image: "/assets/proyecto2.png",
+    link: "https://tuapp.com",
   },
-
-  {
-    id: 5,
-    category: "app",
-    title: "App Gestión de viajes",
-    description:
-      "App fullstack para la organización de viajes y control de pasajes",
-    image: "/assets/proyects/maurello-app.png",
-    link: "https://jlatecnicos.online",
-  },
-
-  {
-    id: 6,
-    category: "app",
-    title: "App de reservas",
-    description:
-      "App fullstack para gestión de reservas para cancahs de futbol y padel",
-    image: "/assets/proyects/yael-app.png",
-    link: "https://jlatecnicos.online",
-  },
+  // Agrega más proyectos aquí...
 ];
 
 const categories = [
@@ -73,14 +38,12 @@ export default function Projects() {
       : projectsData.filter((p) => p.category === active);
 
   return (
-    <section className="bg-[#158f64] py-12 px-6">
-      <h2 className="text-center text-4xl  md:text-6xl  font-extrabold text-black mb-6">
+    <section className="bg-[#1e9a6f] ">
+      <h2 className="text-center text-2xl sm:text-3xl font-bold font-mono text-black mb-6">
         Proyectos
       </h2>
-      <h5 className="text-center mb-6 -mt-2 text-black">
-        Cada proyecto, una solución a medida. Mirá lo que puedo hacer por vos.
-      </h5>
 
+      {/* Botones de filtro */}
       <div className="flex justify-center space-x-4 mb-8">
         {categories.map((cat) => (
           <button
@@ -119,7 +82,7 @@ export default function Projects() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#451780] text-white px-4 py-2 rounded-full font-bold hover:bg-[#6f38b7d3]"
+                className="bg-white text-black px-4 py-2 rounded-full font-bold hover:bg-gray-200"
               >
                 Ver Proyecto
               </a>

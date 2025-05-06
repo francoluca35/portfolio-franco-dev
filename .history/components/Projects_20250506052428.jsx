@@ -77,7 +77,7 @@ export default function Projects() {
       <h2 className="text-center text-4xl  md:text-6xl  font-extrabold text-black mb-6">
         Proyectos
       </h2>
-      <h5 className="text-center mb-6 -mt-2 text-black">
+      <h5 className="text-center mb-6">
         Cada proyecto, una solución a medida. Mirá lo que puedo hacer por vos.
       </h5>
 

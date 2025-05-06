@@ -73,14 +73,12 @@ export default function Projects() {
       : projectsData.filter((p) => p.category === active);
 
   return (
-    <section className="bg-[#158f64] py-12 px-6">
+    <section className="bg-[#1e9a6f] py-12 px-6">
       <h2 className="text-center text-4xl  md:text-6xl  font-extrabold text-black mb-6">
         Proyectos
       </h2>
-      <h5 className="text-center mb-6 -mt-2 text-black">
-        Cada proyecto, una solución a medida. Mirá lo que puedo hacer por vos.
-      </h5>
 
+      {/* Botones de filtro */}
       <div className="flex justify-center space-x-4 mb-8">
         {categories.map((cat) => (
           <button
