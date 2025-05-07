@@ -3,6 +3,7 @@
 import { Outfit } from "next/font/google";
 import dynamic from "next/dynamic";
 
+import ScrollTopButton from "../components/ScrollTopButton";
 import "../styles/globals.css";
 import { metadata } from "./metadata";
 

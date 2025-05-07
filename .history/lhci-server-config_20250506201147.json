@@ -1,0 +1,6 @@
+{
+  "storage": {
+    "sqliteDatabasePath": "./lhci-db.sqlite"
+  }
+}
+

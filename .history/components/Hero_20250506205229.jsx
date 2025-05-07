@@ -9,6 +9,7 @@ import Head from "next/head";
 export default function Hero() {
   return (
     <>
+      {/* Pre-cargar imagen clave para mejorar LCP */}
       <Head>
         <link rel="preload" href="/assets/yo-hero.avif" as="image" />
       </Head>
@@ -22,6 +23,7 @@ export default function Hero() {
         <MatrixRain />
         <div className="hidden md:block absolute top-0 right-[33%] w-24 h-full bg-gradient-to-r from-transparent to-[#171717] z-20" />
 
+        {/* Contenido visible */}
         <div className="relative z-30 max-w-6xl w-full flex flex-col md:flex-row items-center justify-center md:justify-between gap-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -34,10 +36,10 @@ export default function Hero() {
                 src="/assets/yo-hero.avif"
                 alt="Franco Parera - desarrollador fullstack"
                 fill
-                sizes="(max-width: 768px) 300px, (max-width: 1200px) 600px, 640px"
+                sizes="(max-width: 768px) 300px, (max-width: 1200px) 600px, 640px" // Responsivo
                 className="object-cover"
-                loading="eager"
-                priority
+                loading="lazy" // Lazy loading
+                priority // Pre-carga de la imagen
               />
             </div>
           </motion.div>
