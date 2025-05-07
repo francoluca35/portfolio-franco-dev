@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import dynamic from "next/dynamic";
 
+// Cargar AnimatedLogo de manera diferida si es un componente pesado
 const AnimatedLogo = dynamic(() => import("../utils/AnimatedLogo"), {
   ssr: false,
 });
@@ -17,6 +18,7 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-[#0c0713] via-[#3e066f] to-[#000000] text-white py-10 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+        {/* Branding o texto */}
         <div className="text-center md:text-left">
           <AnimatedLogo />
 
@@ -25,6 +27,7 @@ export default function Footer() {
           </p>
         </div>
 
+        {/* Enlaces sociales */}
         <div className="flex gap-5 text-2xl">
           <a
             href="https://www.youtube.com/channel/UCSeA8WkKHhEAjTlec_OBr0A"

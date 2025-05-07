@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiDownload } from "react-icons/fi";
-import Head from "next/head";
+import Head from "next/head"; // Para pre-cargar el CV si es necesario
 
 export default function About() {
   const [descargando, setDescargando] = useState(false);
@@ -29,6 +29,7 @@ export default function About() {
 
   return (
     <>
+      {/* Pre-cargar la imagen de fondo clave si es necesario */}
       <Head>
         <link
           rel="preload"
@@ -43,8 +44,9 @@ export default function About() {
           alt="Fondo"
           fill
           priority
-          sizes="(max-width: 768px) 100vw, 100vw"
+          sizes="(max-width: 768px) 100vw, 100vw" // Tamaños responsivos
           className="object-cover z-0"
+          loading="lazy" // Lazy loading para la imagen de fondo
         />
 
         <div className="absolute inset-0 bg-black/70 z-10 backdrop-blur-sm" />
@@ -53,13 +55,15 @@ export default function About() {
           <div className="relative w-60 h-60 sm:w-72 sm:h-72">
             <div className="absolute inset-0 rounded-full rotating-border z-0" />
             <div className="relative z-10 w-full h-full rounded-full overflow-hidden p-[5px] bg-black">
+              {/* Imagen del perfil optimizada */}
               <Image
                 src="/assets/sobre-mi.avif"
                 alt="Franco Parera"
                 fill
+                priority
                 sizes="(max-width: 640px) 160px, (max-width: 768px) 200px, (max-width: 1024px) 250px, 288px"
                 className="object-cover rounded-full"
-                loading="lazy"
+                loading="lazy" // Lazy loading para la imagen del perfil
               />
             </div>
           </div>

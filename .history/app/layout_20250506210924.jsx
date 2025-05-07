@@ -1,43 +1,31 @@
 "use client";
 
-import { Outfit } from "next/font/google";
-import dynamic from "next/dynamic";
+import { Outfit } from "next/font/google"; // Para cargar la fuente Outfit
+import Nav from "../components/Nav"; // Componente de navegación
+import ScrollTopButton from "../components/ScrollTopButton"; // Botón de desplazamiento hacia arriba
+import "../styles/globals.css"; // Estilos globales
+import { metadata } from "./metadata"; // Meta tags de la página
 
-import "../styles/globals.css";
-import { metadata } from "./metadata";
-
+// Cargar la fuente Outfit de manera eficiente (cargar solo los pesos necesarios)
 const outfit = Outfit({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400"], // Solo cargar los pesos necesarios
 });
-
-const DynamicNav = dynamic(() => import("../components/Nav"), { ssr: false });
-const DynamicScrollTopButton = dynamic(
-  () => import("../components/ScrollTopButton"),
-  { ssr: false }
-);
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
-        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon.ico" />
 
-        <link
-          rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap"
-          as="font"
-          type="font/woff2"
-          crossorigin="anonymous"
-        />
-
+        {/* Meta tags SEO, Open Graph, y Twitter */}
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <meta name="author" content={metadata.authors[0].name} />
         <meta name="creator" content={metadata.creator} />
 
+        {/* Open Graph */}
         <meta property="og:title" content={metadata.openGraph.title} />
         <meta
           property="og:description"
@@ -55,12 +43,19 @@ export default function RootLayout({ children }) {
           content={metadata.openGraph.images[0].height}
         />
 
-        <meta property="og:image" content={metadata.openGraph.images[0].url} />
+        {/* Twitter */}
+        <meta property="twitter:card" content={metadata.twitter.card} />
+        <meta property="twitter:title" content={metadata.twitter.title} />
+        <meta
+          property="twitter:description"
+          content={metadata.twitter.description}
+        />
+        <meta property="twitter:image" content={metadata.twitter.images[0]} />
       </head>
       <body className={`antialiased scroll-smooth ${outfit.className}`}>
-        <DynamicNav />
-        <div className="pt-20">{children}</div>
-        <DynamicScrollTopButton />
+        <Nav /> {/* Navegación principal */}
+        <div className="pt-20">{children}</div> {/* Contenido principal */}
+        <ScrollTopButton /> {/* Botón de desplazamiento hacia arriba */}
       </body>
     </html>
   );

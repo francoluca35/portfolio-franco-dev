@@ -107,6 +107,7 @@ export default function SkillsSection() {
           productos funcionales:
         </p>
 
+        {/* Rejilla de tecnologías */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
           {skills.map((skill, index) => (
             <div

@@ -63,23 +63,25 @@ export default function Contact() {
         </div>
 
         <div className="relative w-64 h-64 md:w-96 md:h-72 flex items-center justify-center">
+          {/* Imagen de nube decorativa */}
           <Image
             src="/assets/nube.png"
             alt="Nube decorativa"
             fill
             sizes="(max-width: 768px) 256px, 384px"
             className="object-contain opacity-80"
-            loading="lazy"
+            loading="lazy" // Lazy load para la imagen
           />
 
           <div className="absolute w-48 h-48 md:w-64 md:h-64">
+            {/* Imagen del perfil (Franco) */}
             <Image
               src="/assets/contact.webp"
               alt="Cartoon Franco Parera"
               fill
               sizes="(max-width: 768px) 192px, 256px"
               className="object-contain"
-              loading="lazy"
+              loading="lazy" // Lazy load para la imagen
             />
           </div>
         </div>

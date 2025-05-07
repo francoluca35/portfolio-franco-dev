@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import dynamic from "next/dynamic";
 
+// Cargar AnimatedLogo de manera diferida para optimizar la carga
 const AnimatedLogo = dynamic(() => import("../utils/AnimatedLogo"), {
   ssr: false,
 });
@@ -24,7 +25,7 @@ export default function Nav() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
+      setScrolled(window.scrollY > 10); // Cambia el estado para cambiar el fondo al hacer scroll
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -43,7 +44,7 @@ export default function Nav() {
           scrolled ? "bg-[#2b06364b] shadow-lg" : "bg-transparent"
         }`}
       >
-        <AnimatedLogo />
+        <AnimatedLogo /> {/* Logo cargado de forma diferida */}
         <button
           onClick={() => setIsOpen(true)}
           className="space-y-2"
