@@ -42,11 +42,7 @@ export default function RootLayout({ children }) {
         <meta name="creator" content={metadata.creator} />
 
         <meta property="og:title" content={metadata.openGraph.title} />
-        <title>FranComputer | Desarrollo Web Fullstack - Franco Parera</title>
-        <meta
-          name="description"
-          content="FranComputer es el portfolio profesional de Franco Parera, desarrollador web fullstack en React, Next.js y MongoDB."
-        />
+        <title>Franco Parera | Desarrollador Web Fullstack</title>
 
         <meta
           property="og:description"

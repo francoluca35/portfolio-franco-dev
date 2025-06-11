@@ -1,1 +1,0 @@
-export default function Experience() { return <section className="my-16">Experiencia (próximamente)</section>; }
