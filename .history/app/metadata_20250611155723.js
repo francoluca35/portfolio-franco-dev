@@ -3,7 +3,7 @@ export const metadata = {
   description:
     "Portfolio de Franco Parera, desarrollador web especializado en React, Next.js y soluciones escalables.",
   keywords:
-    "desarrollador web, portfolio, frontend, backend, next.js, react, diseño web, SEO, Buenos Aires",
+    "FranComputer, desarrollador web, portfolio, frontend, backend, next.js, react, diseño web, SEO, Buenos Aires",
   authors: [{ name: "Franco Parera" }],
   creator: "Franco Parera",
   openGraph: {
