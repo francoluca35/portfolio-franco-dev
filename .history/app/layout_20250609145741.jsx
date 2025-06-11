@@ -26,7 +26,6 @@ export default function RootLayout({ children }) {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon.ico" />
-        <link rel="canonical" href="https://francomputer.com.ar" />
 
         <link
           rel="preload"
@@ -42,11 +41,7 @@ export default function RootLayout({ children }) {
         <meta name="creator" content={metadata.creator} />
 
         <meta property="og:title" content={metadata.openGraph.title} />
-        <title>FranComputer | Desarrollo Web Fullstack - Franco Parera</title>
-        <meta
-          name="description"
-          content="FranComputer es el portfolio profesional de Franco Parera, desarrollador web fullstack en React, Next.js y MongoDB."
-        />
+        <title>Franco Parera | Desarrollador Web Fullstack</title>
 
         <meta
           property="og:description"
@@ -65,36 +60,6 @@ export default function RootLayout({ children }) {
         />
 
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Franco Parera",
-              jobTitle: "Desarrollador Web Fullstack",
-              url: "https://francomputer.com.ar",
-              sameAs: [
-                "https://github.com/francoluca35",
-                "https://www.linkedin.com/in/franco-parera/",
-              ],
-            }),
-          }}
-        />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-27M0KS481G"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-27M0KS481G');
-    `,
-          }}
-        />
       </head>
       <body className={`antialiased scroll-smooth ${outfit.className}`}>
         <DynamicNav />

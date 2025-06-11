@@ -88,9 +88,9 @@ export default function About() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="text-white leading-relaxed"
             >
-              Mas de <strong>2 años</strong> especializado en{" "}
-              <strong>proyectos digitales escalables</strong>, con{" "}
-              <strong>Next.js, React.js, Node.js</strong> y{" "}
+              Soy <strong>desarrollador web fullstack</strong> con experiencia
+              en <strong>proyectos digitales escalables</strong>, especializado
+              en <strong>Next.js, React, Node.js</strong> y{" "}
               <strong>MongoDB</strong>. Diseño y desarrollo{" "}
               <strong>sitios web responsivos</strong>, optimizados para{" "}
               <strong>rendimiento, SEO y experiencia del usuario</strong>.

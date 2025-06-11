@@ -42,11 +42,7 @@ export default function RootLayout({ children }) {
         <meta name="creator" content={metadata.creator} />
 
         <meta property="og:title" content={metadata.openGraph.title} />
-        <title>FranComputer | Desarrollo Web Fullstack - Franco Parera</title>
-        <meta
-          name="description"
-          content="FranComputer es el portfolio profesional de Franco Parera, desarrollador web fullstack en React, Next.js y MongoDB."
-        />
+        <title>Franco Parera | Desarrollador Web Fullstack</title>
 
         <meta
           property="og:description"
@@ -83,7 +79,7 @@ export default function RootLayout({ children }) {
         />
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-27M0KS481G"
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -91,7 +87,7 @@ export default function RootLayout({ children }) {
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-27M0KS481G');
+      gtag('config', 'G-XXXXXXXXXX');
     `,
           }}
         />

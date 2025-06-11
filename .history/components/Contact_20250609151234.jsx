@@ -16,9 +16,11 @@ export default function Contact() {
         {/* Texto y enlaces */}
         <div className="text-left md:w-1/2">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-            ¿Querés lanzar tu sitio o app? Trabajemos juntos
+            Contacto directo – Trabajemos juntos
           </h2>
-
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+            Siempre estoy dispuesto a charlar
+          </h2>
           <p className="text-lg mb-2">
             <a
               href="mailto:francolucap1@gmail.com"

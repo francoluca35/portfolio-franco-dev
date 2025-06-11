@@ -103,8 +103,9 @@ export default function SkillsSection() {
           Tecnologías que domino
         </h2>
         <p className="text-white/80 mb-10">
-          para crear sitios modernos, rápidos y escalables utilizó: React.js,
-          Next.js, Tailwind, APIs RESTful, MongoDB, Firebase y más.
+          Las tecnologías que utilizo para crear sitios modernos, rápidos y
+          escalables: React, Next.js, Tailwind, APIs RESTful, MongoDB, Firebase
+          y más.
         </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
