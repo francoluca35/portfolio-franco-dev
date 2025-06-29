@@ -8,11 +8,10 @@ const projectsData = [
   {
     id: 1,
     category: "web",
-    title: "Web Diseño & Desarrollo web",
+    title: "Web Emprendimiento",
     description: "Sitio web DeamonDD Diseño & Desarrollo",
     image: "/assets/proyects/deamondd.avif",
     link: "https://deamondd.com",
-    github: "https://github.com/francoluca35/deamon-dd",
   },
   {
     id: 2,
@@ -21,7 +20,6 @@ const projectsData = [
     description: "Sitio web JLA Técnico",
     image: "/assets/proyects/jla.avif",
     link: "https://jlatecnicos.com",
-    github: "https://github.com/francoluca35/web-site-jla",
   },
   {
     id: 3,
@@ -30,7 +28,6 @@ const projectsData = [
     description: "Sitio web Transportes Maurello S.A",
     image: "/assets/proyects/maurello-web.avif",
     link: "https://empresacolectivo.vercel.app",
-    github: "https://github.com/francoluca35/empresacolectivo",
   },
   {
     id: 4,
@@ -38,8 +35,7 @@ const projectsData = [
     title: "App Control de finanzas",
     description: "App fullstack para gestión de finanzas para JLA Técnico",
     image: "/assets/proyects/app-jla.avif",
-
-    github: "https://github.com/francoluca35/jla-app",
+    link: "https://jlatecnicos.online",
   },
   {
     id: 5,
@@ -48,7 +44,7 @@ const projectsData = [
     description:
       "App fullstack para la organización de viajes y control de pasajes",
     image: "/assets/proyects/maurello-app.avif",
-    github: "https://github.com/francoluca35/appcolectivos",
+    link: "https://appcolectivos.vercel.app",
   },
   {
     id: 6,
@@ -56,18 +52,18 @@ const projectsData = [
     title: "App de reservas",
     description:
       "App fullstack para gestión de reservas para canchas de futbol y padel",
-    image: "/assets/proyects/caruso-app.png",
+    image: "/assets/proyects/yael-app.avif",
     link: "https://yael-app.vercel.app",
-    github: "https://github.com/francoluca35/yael-app",
   },
   {
     id: 7,
     category: "app",
-    title: "Comandas restaurante",
+    title: "App de reservas",
     description:
       "App fullstack para gestión de reservas para canchas de futbol y padel",
-    image: "/assets/proyects/perumar-1.png",
-    github: "https://github.com/francoluca35/comandas",
+    image: "/assets/proyects/yael-app.avif",
+    link: "https://yael-app.vercel.app",
+    github: "https://github.com/francoluca35/yael-app",
   },
 ];
 
@@ -79,7 +75,7 @@ const categories = [
 
 const ProjectCard = memo(({ project }) => {
   return (
-    <div className="relative group rounded-xl overflow-hidden bg-black/70 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+    <div className="relative group rounded-xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
       <Image
         src={project.image}
         alt={project.title}
@@ -88,30 +84,31 @@ const ProjectCard = memo(({ project }) => {
         className="object-cover w-full h-[200px]"
       />
       <div className="p-4">
-        <h3 className="text-lg font-semibold text-white">{project.title}</h3>
-        <p className="text-sm text-white mt-1">
+        <h3 className="text-lg font-semibold text-gray-900">{project.title}</h3>
+        <p className="text-sm text-gray-600 mt-1">
           {project.category === "web" ? "Páginas Web" : "App Web"}
         </p>
       </div>
 
+      {/* ICONOS AL HACER HOVER */}
       <div className="absolute bottom-3 right-3 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        {project.link && (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-black p-2 rounded-full hover:bg-gray-400"
-          >
-            <FiExternalLink size={18} />
-          </a>
-        )}
+        {/* Ícono de link web */}
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-black text-white p-2 rounded-full hover:bg-gray-800"
+        >
+          <FiExternalLink size={18} />
+        </a>
 
+        {/* Ícono de GitHub (solo si hay propiedad github en el proyecto) */}
         {project.github && (
           <a
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-black p-2 rounded-full hover:bg-gray-400"
+            className="bg-black text-white p-2 rounded-full hover:bg-gray-800"
           >
             <FiGithub size={18} />
           </a>
@@ -126,7 +123,7 @@ export default function Projects() {
 
   const filtered =
     active === "all"
-      ? projectsData.slice(0, 6)
+      ? projectsData.slice(0, 6) // solo los primeros 6
       : projectsData.filter((p) => p.category === active);
 
   return (

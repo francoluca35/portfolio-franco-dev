@@ -2,17 +2,15 @@
 
 import { useState, memo } from "react";
 import Image from "next/image";
-import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 const projectsData = [
   {
     id: 1,
     category: "web",
-    title: "Web Diseño & Desarrollo web",
+    title: "Web Emprendimiento",
     description: "Sitio web DeamonDD Diseño & Desarrollo",
     image: "/assets/proyects/deamondd.avif",
     link: "https://deamondd.com",
-    github: "https://github.com/francoluca35/deamon-dd",
   },
   {
     id: 2,
@@ -21,7 +19,6 @@ const projectsData = [
     description: "Sitio web JLA Técnico",
     image: "/assets/proyects/jla.avif",
     link: "https://jlatecnicos.com",
-    github: "https://github.com/francoluca35/web-site-jla",
   },
   {
     id: 3,
@@ -30,7 +27,6 @@ const projectsData = [
     description: "Sitio web Transportes Maurello S.A",
     image: "/assets/proyects/maurello-web.avif",
     link: "https://empresacolectivo.vercel.app",
-    github: "https://github.com/francoluca35/empresacolectivo",
   },
   {
     id: 4,
@@ -38,8 +34,7 @@ const projectsData = [
     title: "App Control de finanzas",
     description: "App fullstack para gestión de finanzas para JLA Técnico",
     image: "/assets/proyects/app-jla.avif",
-
-    github: "https://github.com/francoluca35/jla-app",
+    link: "https://jlatecnicos.online",
   },
   {
     id: 5,
@@ -48,7 +43,7 @@ const projectsData = [
     description:
       "App fullstack para la organización de viajes y control de pasajes",
     image: "/assets/proyects/maurello-app.avif",
-    github: "https://github.com/francoluca35/appcolectivos",
+    link: "https://appcolectivos.vercel.app",
   },
   {
     id: 6,
@@ -56,18 +51,8 @@ const projectsData = [
     title: "App de reservas",
     description:
       "App fullstack para gestión de reservas para canchas de futbol y padel",
-    image: "/assets/proyects/caruso-app.png",
+    image: "/assets/proyects/yael-app.avif",
     link: "https://yael-app.vercel.app",
-    github: "https://github.com/francoluca35/yael-app",
-  },
-  {
-    id: 7,
-    category: "app",
-    title: "Comandas restaurante",
-    description:
-      "App fullstack para gestión de reservas para canchas de futbol y padel",
-    image: "/assets/proyects/perumar-1.png",
-    github: "https://github.com/francoluca35/comandas",
   },
 ];
 
@@ -79,43 +64,27 @@ const categories = [
 
 const ProjectCard = memo(({ project }) => {
   return (
-    <div className="relative group rounded-xl overflow-hidden bg-black/70 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+    <div className="relative group rounded-lg overflow-hidden shadow-md">
       <Image
         src={project.image}
         alt={project.title}
         width={400}
-        height={250}
-        className="object-cover w-full h-[200px]"
+        height={300}
+        loading="lazy"
+        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        className="object-cover w-full h-full"
       />
-      <div className="p-4">
-        <h3 className="text-lg font-semibold text-white">{project.title}</h3>
-        <p className="text-sm text-white mt-1">
-          {project.category === "web" ? "Páginas Web" : "App Web"}
-        </p>
-      </div>
-
-      <div className="absolute bottom-3 right-3 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        {project.link && (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-black p-2 rounded-full hover:bg-gray-400"
-          >
-            <FiExternalLink size={18} />
-          </a>
-        )}
-
-        {project.github && (
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-black p-2 rounded-full hover:bg-gray-400"
-          >
-            <FiGithub size={18} />
-          </a>
-        )}
+      <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 flex flex-col justify-center items-center text-center text-white">
+        <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+        <p className="text-sm mb-4">{project.description}</p>
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#451780] text-white px-4 py-2 rounded-full font-bold hover:bg-[#6f38b7d3]"
+        >
+          Ver Proyecto
+        </a>
       </div>
     </div>
   );
@@ -126,7 +95,7 @@ export default function Projects() {
 
   const filtered =
     active === "all"
-      ? projectsData.slice(0, 6)
+      ? projectsData.slice(0, 6) // solo los primeros 6
       : projectsData.filter((p) => p.category === active);
 
   return (

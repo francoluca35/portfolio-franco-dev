@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     category: "web",
-    title: "Web Diseño & Desarrollo web",
+    title: "Web Emprendimiento",
     description: "Sitio web DeamonDD Diseño & Desarrollo",
     image: "/assets/proyects/deamondd.avif",
     link: "https://deamondd.com",
@@ -94,18 +94,19 @@ const ProjectCard = memo(({ project }) => {
         </p>
       </div>
 
+      {/* ICONOS AL HACER HOVER */}
       <div className="absolute bottom-3 right-3 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        {project.link && (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-black p-2 rounded-full hover:bg-gray-400"
-          >
-            <FiExternalLink size={18} />
-          </a>
-        )}
+        {/* Ícono de link web */}
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white text-black p-2 rounded-full hover:bg-gray-400"
+        >
+          <FiExternalLink size={18} />
+        </a>
 
+        {/* Ícono de GitHub (solo si hay propiedad github en el proyecto) */}
         {project.github && (
           <a
             href={project.github}
@@ -126,7 +127,7 @@ export default function Projects() {
 
   const filtered =
     active === "all"
-      ? projectsData.slice(0, 6)
+      ? projectsData.slice(0, 6) // solo los primeros 6
       : projectsData.filter((p) => p.category === active);
 
   return (
