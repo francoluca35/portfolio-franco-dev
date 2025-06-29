@@ -126,7 +126,7 @@ export default function Projects() {
 
   const filtered =
     active === "all"
-      ? projectsData.slice(0, 6)
+      ? projectsData.slice(0, 6) // solo los primeros 6
       : projectsData.filter((p) => p.category === active);
 
   return (
