@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     category: "web",
-    title: "Web Diseño & Desarrollo web",
+    title: "Web Emprendimiento",
     description: "Sitio web DeamonDD Diseño & Desarrollo",
     image: "/assets/proyects/deamondd.avif",
     link: "https://deamondd.com",
@@ -56,14 +56,14 @@ const projectsData = [
     title: "App de reservas",
     description:
       "App fullstack para gestión de reservas para canchas de futbol y padel",
-    image: "/assets/proyects/caruso-app.png",
+    image: "/assets/proyects/yael-app.avif",
     link: "https://yael-app.vercel.app",
     github: "https://github.com/francoluca35/yael-app",
   },
   {
     id: 7,
     category: "app",
-    title: "Comandas restaurante",
+    title: "App de reservas",
     description:
       "App fullstack para gestión de reservas para canchas de futbol y padel",
     image: "/assets/proyects/perumar-1.png",

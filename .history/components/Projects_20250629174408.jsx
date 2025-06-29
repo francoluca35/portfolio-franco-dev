@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     category: "web",
-    title: "Web Diseño & Desarrollo web",
+    title: "Web Emprendimiento",
     description: "Sitio web DeamonDD Diseño & Desarrollo",
     image: "/assets/proyects/deamondd.avif",
     link: "https://deamondd.com",
