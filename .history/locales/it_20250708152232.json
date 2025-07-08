@@ -1,0 +1,74 @@
+{
+  "menu": {
+    "inicio": "INIZIO",
+    "about": "CHI SONO",
+    "skills": "COMPETENZE",
+    "proyectos": "PROGETTI",
+    "contacto": "CONTATTO",
+    "cerrar": "chiudi"
+  },
+  "hero": {
+    "title": "Franco Parera – Fullstack Developer",
+    "desc": "Sviluppo soluzioni digitali scalabili e design web moderno, trasformando idee in esperienze web robuste ed efficaci.",
+    "item1": "Ottimizzazione SEO e struttura semantica",
+    "item2": "Web app responsive e animate",
+    "item3": "Codice pulito, moderno e riutilizzabile",
+    "item4": "Esperienza in progetti internazionali"
+  },
+  "about": {
+    "title": "Chi sono",
+    "subtitle": "Cosa faccio come sviluppatore?",
+    "desc": "Oltre <1>2 anni</1> specializzato in <3>progetti digitali scalabili</3>, con <5>Next.js, React.js, Node.js</5> e <7>MongoDB</7>. Progetto e sviluppo <9>siti web responsivi</9>, ottimizzati per <11>prestazioni, SEO ed esperienza utente</11>. Lavoro con attenzione alla <13>qualità, alle buone pratiche, alla documentazione</13> e al rispetto delle scadenze.",
+    "btn": "Scarica CV",
+    "btn_downloading": "Download in corso...",
+    "btn_done": "Sul computer"
+  },
+  "projects": {
+    "title": "Progetti",
+    "subtitle": "Ogni progetto, una soluzione su misura. Guarda cosa posso fare per te.",
+    "categories": {
+      "all": "Tutti",
+      "web": "Siti Web",
+      "app": "App Web"
+    },
+    "list": [
+      {
+        "title": "Web Design & Sviluppo",
+        "description": "Sito web DeamonDD Design & Sviluppo"
+      },
+      {
+        "title": "Sito Azienda Gastronomica",
+        "description": "Sito web JLA Tecnico"
+      },
+      {
+        "title": "Sito di Viaggi",
+        "description": "Sito web Transportes Maurello S.A"
+      },
+      {
+        "title": "App Gestione Finanze",
+        "description": "App fullstack per la gestione finanziaria per JLA Tecnico"
+      },
+      {
+        "title": "App Gestione Viaggi",
+        "description": "App fullstack per l'organizzazione dei viaggi e la gestione dei biglietti"
+      },
+      {
+        "title": "App Prenotazioni",
+        "description": "App fullstack per la gestione delle prenotazioni di campi da calcio e padel"
+      },
+      {
+        "title": "Comande Ristorante",
+        "description": "App fullstack per comande e prenotazioni nei ristoranti"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Vuoi lanciare il tuo sito o app? Lavoriamo insieme",
+    "mail_action": "Mandami un'email",
+    "mail": "a Francolucap1@gmail.com",
+    "social": "o contattami tramite i miei social network."
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati."
+  }
+}

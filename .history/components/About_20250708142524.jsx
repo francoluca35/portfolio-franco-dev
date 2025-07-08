@@ -9,24 +9,17 @@ import { useTranslation, Trans } from "react-i18next";
 export default function About() {
   const [descargando, setDescargando] = useState(false);
   const [descargado, setDescargado] = useState(false);
-  const { t, i18n } = useTranslation();
-
-  const isEnglish = i18n.language === "en";
-  const pdfPath = isEnglish
-    ? "/pdfs/cv-parera-franco-luca(en).pdf"
-    : "/pdfs/cv-parera-franco-luca(es).pdf";
-  const pdfName = isEnglish
-    ? "franco-parera-cv-english.pdf"
-    : "cv-parera-franco-desarrollo.pdf";
+  const { t } = useTranslation();
 
   const handleDescarga = () => {
     if (descargando || descargado) return;
+
     setDescargando(true);
 
     setTimeout(() => {
       const link = document.createElement("a");
-      link.href = pdfPath;
-      link.download = pdfName;
+      link.href = "/pdfs/cv-parera-franco-luca.pdf";
+      link.download = "cv-parera-franco-desarrollo.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -80,7 +73,8 @@ export default function About() {
               transition={{ duration: 0.6 }}
               className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight"
             >
-              {t("about.title")}
+              <span className="text-[#0fc573]">{t("about.title").split(" ")[0]}</span>{" "}
+              {t("about.title").split(" ").slice(1).join(" ")}
             </motion.h2>
             <motion.h3
               initial={{ opacity: 0, y: 20 }}
@@ -100,13 +94,7 @@ export default function About() {
               <Trans
                 i18nKey="about.desc"
                 components={[
-                  <strong key={1} />,
-                  <strong key={3} />,
-                  <strong key={5} />,
-                  <strong key={7} />,
-                  <strong key={9} />,
-                  <strong key={11} />,
-                  <strong key={13} />,
+                  <strong key={1} />, <strong key={3} />, <strong key={5} />, <strong key={7} />, <strong key={9} />, <strong key={11} />, <strong key={13} />
                 ]}
               />
             </motion.p>
@@ -119,15 +107,18 @@ export default function About() {
                 ${
                   descargado
                     ? "bg-green-600 text-white"
-                    : descargando
+                    : desc
+                    argando
                     ? "bg-[#a765f2] text-white"
                     : "bg-[#8e2df5] text-white hover:bg-[#7c23d3]"
-                }`}
+                }`
+              }
             >
               <FiDownload className="text-xl" />
               {descargado
                 ? t("about.btn_done")
-                : descargando
+                : desc
+                argando
                 ? t("about.btn_downloading")
                 : t("about.btn")}
             </motion.button>

@@ -70,17 +70,6 @@ export default function Nav() {
             EN
           </button>
           <button
-            onClick={() => i18n.changeLanguage("it")}
-            className={`text-sm px-2 py-1 rounded ${
-              i18n.language === "it"
-                ? "bg-[#0fc555] text-white"
-                : "bg-white text-black"
-            }`}
-          >
-            IT
-          </button>
-
-          <button
             onClick={() => setIsOpen(true)}
             className="space-y-2 ml-3"
             aria-label="Abrir menú de navegación"

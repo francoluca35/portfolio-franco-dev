@@ -1,0 +1,94 @@
+{
+    "menu": {
+      "inicio": "INICIO",
+      "about": "SOBRE MI",
+      "skills": "HABILIDADES",
+      "proyectos": "PROYECTOS",
+      "contacto": "CONTACTO",
+      "cerrar": "cerrar"
+    },
+    "hero": {
+        "title": "Franco Parera – Fullstack Developer",
+        "desc": "Desarrollo soluciones digitales escalables y diseño web moderno, transformando ideas en experiencias web robustas y efectivas.",
+        "item1": "Optimización SEO y estructura semántica",
+        "item2": "Web apps responsivas y animadas",
+        "item3": "Código limpio, moderno y reutilizable",
+        "item4": "Experiencia en proyectos internacionales"
+      },
+        "about": {
+          "title": "Sobre Mí",
+          "subtitle": "¿Qué hago como desarrollador?",
+          "desc": "Más de <1>2 años</1> especializado en <3>proyectos digitales escalables</3>, con <5>Next.js, React.js, Node.js</5> y <7>MongoDB</7>. Diseño y desarrollo <9>sitios web responsivos</9>, optimizados para <11>rendimiento, SEO y experiencia del usuario</11>. Trabajo con enfoque en <13>calidad, buenas prácticas, documentación</13> y cumplimiento de plazos.",
+          "btn": "Descargar CV",
+          "btn_downloading": "Descargando...",
+          "btn_done": "En Ordenador"
+        },
+        "skills": {
+    "top": "Skills & Herramientas",
+    "title": "Tecnologías que domino",
+    "desc": "Para crear sitios modernos, rápidos y escalables utilizo: React.js, Next.js, Tailwind, APIs RESTful, MongoDB, Firebase y más.",
+    "html": "HTML5",
+    "css": "CSS3",
+    "js": "JavaScript",
+    "tailwind": "Tailwind CSS",
+    "next": "Next",
+    "react": "React",
+    "remix": "Remix",
+    "git": "Git",
+    "github": "GitHub",
+    "rest": "APIs RESTful",
+    "firebase": "Firebase",
+    "mongodb": "MongoDB"
+  },
+
+        "projects": {
+            "title": "Proyectos",
+            "subtitle": "Cada proyecto, una solución a medida. Mirá lo que puedo hacer por vos.",
+            "categories": {
+              "all": "Todos",
+              "web": "Páginas Web",
+              "app": "App Web"
+            },
+            "list": [
+              {
+                "title": "Web Diseño & Desarrollo web",
+                "description": "Sitio web DeamonDD Diseño & Desarrollo"
+              },
+              {
+                "title": "Web Empresa Gastronómica",
+                "description": "Sitio web JLA Técnico"
+              },
+              {
+                "title": "Web de Viajes",
+                "description": "Sitio web Transportes Maurello S.A"
+              },
+              {
+                "title": "App Control de finanzas",
+                "description": "App fullstack para gestión de finanzas para JLA Técnico"
+              },
+              {
+                "title": "App Gestión de viajes",
+                "description": "App fullstack para la organización de viajes y control de pasajes"
+              },
+              {
+                "title": "App de reservas",
+                "description": "App fullstack para gestión de reservas para canchas de futbol y padel"
+              },
+              {
+                "title": "Comandas restaurante",
+                "description": "App fullstack para comandas y reservas en restaurantes"
+              }
+            ]
+          },
+      "contact": {
+    "title": "¿Querés lanzar tu sitio o app? Trabajemos juntos",
+    "mail_action": "Hazme un correo electrónico",
+    "mail": "a Francolucap1@gmail.com",
+    "social": "o contactame por mis redes sociales."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+   
+  }
+  

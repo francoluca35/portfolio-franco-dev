@@ -1,0 +1,14 @@
+{
+    "menu": {
+      "inicio": "INICIO",
+      "about": "SOBRE MI",
+      "skills": "HABILIDADES",
+      "proyectos": "PROYECTOS",
+      "contacto": "CONTACTO",
+      "cerrar": "cerrar"
+    },
+    "bienvenido": "Hola, soy Franco Parera",
+    "proyectos": "Proyectos",
+    "contacto": "Contactp"
+  }
+  

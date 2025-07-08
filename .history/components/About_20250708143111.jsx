@@ -9,15 +9,7 @@ import { useTranslation, Trans } from "react-i18next";
 export default function About() {
   const [descargando, setDescargando] = useState(false);
   const [descargado, setDescargado] = useState(false);
-  const { t, i18n } = useTranslation();
-
-  const isEnglish = i18n.language === "en";
-  const pdfPath = isEnglish
-    ? "/pdfs/cv-parera-franco-luca(en).pdf"
-    : "/pdfs/cv-parera-franco-luca(es).pdf";
-  const pdfName = isEnglish
-    ? "franco-parera-cv-english.pdf"
-    : "cv-parera-franco-desarrollo.pdf";
+  const { t } = useTranslation();
 
   const handleDescarga = () => {
     if (descargando || descargado) return;
@@ -25,8 +17,8 @@ export default function About() {
 
     setTimeout(() => {
       const link = document.createElement("a");
-      link.href = pdfPath;
-      link.download = pdfName;
+      link.href = "/pdfs/cv-parera-franco-luca.pdf";
+      link.download = "cv-parera-franco-desarrollo.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

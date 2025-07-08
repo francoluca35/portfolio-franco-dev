@@ -1,0 +1,23 @@
+{
+    "menu": {
+      "inicio": "INICIO",
+      "about": "SOBRE MI",
+      "skills": "HABILIDADES",
+      "proyectos": "PROYECTOS",
+      "contacto": "CONTACTO",
+      "cerrar": "cerrar"
+    },
+    "hero": {
+        "title": "Franco Parera – Fullstack Developer",
+        "desc": "Desarrollo soluciones digitales escalables y diseño web moderno, transformando ideas en experiencias web robustas y efectivas.",
+        "item1": "Optimización SEO y estructura semántica",
+        "item2": "Web apps responsivas y animadas",
+        "item3": "Código limpio, moderno y reutilizable",
+        "item4": "Experiencia en proyectos internacionales"
+      }
+    ,
+    "bienvenido": "Hola, soy Franco Parera",
+    "proyectos": "Proyectos",
+    "contacto": "Contactp"
+  }
+  
