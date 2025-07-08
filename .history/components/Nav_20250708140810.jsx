@@ -5,18 +5,18 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import dynamic from "next/dynamic";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"; // Importante
 
 const AnimatedLogo = dynamic(() => import("../utils/AnimatedLogo"), {
   ssr: false,
 });
 
 const menuItems = [
-  { href: "#inicio", label: "menu.inicio" },
-  { href: "#about", label: "menu.about" },
-  { href: "#skills", label: "menu.skills" },
-  { href: "#proyectos", label: "menu.proyectos" },
-  { href: "#contacto", label: "menu.contacto" },
+  { href: "#inicio", label: "inicio" },
+  { href: "#about", label: "about" },
+  { href: "#skills", label: "skills" },
+  { href: "#proyectos", label: "proyectos" },
+  { href: "#contacto", label: "contacto" },
 ];
 
 export default function Nav() {
@@ -24,7 +24,7 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
 
   const { t, i18n } = useTranslation(); // Hook para traducción
-  console.log("Traducción de menu.inicio:", t("menu.inicio"));
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
@@ -69,17 +69,6 @@ export default function Nav() {
           >
             EN
           </button>
-          <button
-            onClick={() => i18n.changeLanguage("it")}
-            className={`text-sm px-2 py-1 rounded ${
-              i18n.language === "it"
-                ? "bg-[#0fc555] text-white"
-                : "bg-white text-black"
-            }`}
-          >
-            IT
-          </button>
-
           <button
             onClick={() => setIsOpen(true)}
             className="space-y-2 ml-3"

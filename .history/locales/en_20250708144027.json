@@ -1,0 +1,48 @@
+{
+    "menu": {
+      "inicio": "HOME",
+      "about": "ABOUT ME",
+      "skills": "SKILLS",
+      "proyectos": "PROJECTS",
+      "contacto": "CONTACT",
+      "cerrar": "close"
+    },
+    "hero": {
+        "title": "Franco Parera – Fullstack Developer",
+        "desc": "I develop scalable digital solutions and modern web design, turning ideas into robust and effective web experiences.",
+        "item1": "SEO optimization and semantic structure",
+        "item2": "Responsive and animated web apps",
+        "item3": "Clean, modern and reusable code",
+        "item4": "Experience in international projects"
+      },
+      "about": {
+        "title": "About Me",
+        "subtitle": "What do I do as a developer?",
+        "desc": "Over <1>2 years</1> specialized in <3>scalable digital projects</3> with <5>Next.js, React.js, Node.js</5> and <7>MongoDB</7>. I design and build <9>responsive websites</9>, optimized for <11>performance, SEO and user experience</11>. I focus on <13>quality, best practices, documentation</13> and meeting deadlines.",
+        "btn": "Download CV",
+        "btn_downloading": "Downloading...",
+        "btn_done": "On Computer"
+      },
+      "skills": {
+        "top": "Skills & Tools",
+        "title": "Technologies I master",
+        "desc": "To build modern, fast and scalable websites I use: React.js, Next.js, Tailwind, RESTful APIs, MongoDB, Firebase and more.",
+        "html": "HTML5",
+        "css": "CSS3",
+        "js": "JavaScript",
+        "tailwind": "Tailwind CSS",
+        "next": "Next",
+        "react": "React",
+        "remix": "Remix",
+        "git": "Git",
+        "github": "GitHub",
+        "rest": "RESTful APIs",
+        "firebase": "Firebase",
+        "mongodb": "MongoDB"
+      }
+      ,
+    "bienvenido": "Hi! I'm Franco Parera",
+    "proyectos": "Projects",
+    "contacto": "Contact"
+  }
+  

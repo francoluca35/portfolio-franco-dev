@@ -1,0 +1,14 @@
+{
+    "menu": {
+      "inicio": "HOME",
+      "about": "ABOUT ME",
+      "skills": "SKILLS",
+      "proyectos": "PROJECTS",
+      "contacto": "CONTACT",
+      "cerrar": "close"
+    },
+    "bienvenido": "Hi! I'm Franco Parera",
+    "proyectos": "Projects",
+    "contacto": "Contact"
+  }
+  

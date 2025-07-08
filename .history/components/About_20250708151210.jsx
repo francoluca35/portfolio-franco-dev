@@ -13,8 +13,8 @@ export default function About() {
 
   const isEnglish = i18n.language === "en";
   const pdfPath = isEnglish
-    ? "/pdfs/cv-parera-franco-luca(en).pdf"
-    : "/pdfs/cv-parera-franco-luca(es).pdf";
+    ? "/pdfs/cv-parera-franco-luca-en.pdf"
+    : "/pdfs/cv-parera-franco-luca.pdf";
   const pdfName = isEnglish
     ? "franco-parera-cv-english.pdf"
     : "cv-parera-franco-desarrollo.pdf";

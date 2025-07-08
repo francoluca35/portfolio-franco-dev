@@ -1,4 +1,3 @@
-"use client";
 import dynamic from "next/dynamic";
 import { useTranslation } from "react-i18next";
 
@@ -34,7 +33,7 @@ export default function HomePage() {
         <About key={i18n.language} />
       </section>
       <section id="skills" className="bg-[#181818] text-white">
-        <Experience key={i18n.language} />
+        <Experience />
       </section>
       <section id="proyectos" className="bg-[#0E0E0E] text-white">
         <Projects />
