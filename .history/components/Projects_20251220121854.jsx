@@ -23,26 +23,26 @@ const projectsData = [
   },
   
   {
-    id: 4,
+    id: 3,
     category: "app",
     image: "/assets/proyects/app-jla.avif",
     github: "https://github.com/francoluca35/jla-app",
   },
   {
-    id: 5,
+    id: 4,
     category: "app",
     image: "/assets/proyects/maurello-app.avif",
     github: "https://github.com/francoluca35/appcolectivos",
   },
   {
-    id: 6,
+    id: 5,
     category: "app",
     image: "/assets/proyects/caruso-app.png",
     link: "https://yael-app.vercel.app",
     github: "https://github.com/francoluca35/yael-app",
   },
   {
-    id: 7,
+    id: 6,
     category: "app",
     image: "/assets/proyects/perumar-1.png",
     github: "https://github.com/francoluca35/comandas",

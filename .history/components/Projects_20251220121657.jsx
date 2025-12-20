@@ -21,7 +21,6 @@ const projectsData = [
     link: "https://jlatecnicos.com",
     github: "https://github.com/francoluca35/web-site-jla",
   },
-  
   {
     id: 4,
     category: "app",

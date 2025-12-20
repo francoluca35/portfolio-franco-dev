@@ -21,7 +21,13 @@ const projectsData = [
     link: "https://jlatecnicos.com",
     github: "https://github.com/francoluca35/web-site-jla",
   },
-  
+  {
+    id: 3,
+    category: "web",
+    image: "/assets/proyects/maurello-web.avif",
+    link: "https://empresacolectivo.vercel.app",
+    github: "https://github.com/francoluca35/empresacolectivo",
+  },
   {
     id: 4,
     category: "app",
